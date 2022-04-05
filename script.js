@@ -37,9 +37,11 @@ function showUrl() {
             let clipText = e.target.previousElementSibling.textContent;
             navigator.clipboard.writeText(clipText);
             e.target.textContent = "copied";
+            e.target.style.background = "hsl(255, 11%, 22%)";
             setTimeout(() => {
               e.target.textContent = "copy";
-            }, 300);
+              e.target.style.background = "";
+            }, 400);
           });
         });
       });
