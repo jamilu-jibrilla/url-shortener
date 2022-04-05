@@ -8,9 +8,9 @@ let navLinks = document.querySelector(".nav-bar");
 let errorMessage = document.querySelector(".error-message");
 let submitBtn = document.querySelector(".submit-btn");
 inputField.addEventListener("focusout", () => {
-  if (inputField.value < 1) {
+  if (inputField.value.length < 1) {
     errorMessage.style.display = "flex";
-  } else {
+  } else if (inputField.value.length > 0) {
     errorMessage.style.display = "";
   }
 });
