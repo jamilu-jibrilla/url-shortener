@@ -121,6 +121,11 @@ nav li {
 .copy h4 {
   color: hsl(180, 66%, 49%);
 }
+.copy-h {
+  width: 50%;
+  text-align: start;
+  word-wrap: break-word;
+}
 .url-shortener input {
   background-color: white;
   width: 70%;
@@ -326,10 +331,11 @@ button:hover,
     font-weight: bold;
     flex-direction: column;
     clip-path: circle(100px at 90% -50%);
-    height: 0px;
     transition: all 1s ease-out;
+    height: 0px;
   }
   .nav-bar.open {
+    height: 100%;
     clip-path: circle(1000px at 90% -50%);
   }
 
@@ -488,6 +494,7 @@ button:hover,
     font-weight: bold;
   }
   .copy-h {
+    word-wrap: break-word;
     padding: 0.5em 0.8em;
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
