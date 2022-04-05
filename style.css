@@ -470,6 +470,7 @@ button:hover,
   footer {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
   }
   .social-media-links {
     align-items: flex-end;
